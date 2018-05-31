@@ -1,8 +1,6 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-  profiles:
-    active: dev
   application:
     name: order-service
 
@@ -30,4 +28,6 @@ pagehelper:
 page: 5
 
 server:
-  port:
+  port: 8765
+
+test: wanzhiwei

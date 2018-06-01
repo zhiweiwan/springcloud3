@@ -1,9 +1,6 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-  application:
-    name: order-service
-
 
 
 #mybatis
@@ -14,7 +11,7 @@ mybatis:
 #mapper
 #mappers 多个接口时逗号隔开
 mapper:
-  mappers: com.lanou.util.util
+  mappers: com.lanou.util.MyMapper
   not-empty: false
   identity: MYSQL
 
@@ -25,9 +22,7 @@ pagehelper:
   supportMethodsArguments: true
   params: count=countSql
 
-page: 5
 
 server:
-  port: 8765
+  port: 8766
 
-test: wanzhiwei
